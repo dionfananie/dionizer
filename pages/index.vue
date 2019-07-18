@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="wrapper--main">
     <div>
       <logo />
       <h1 class="title">
@@ -9,7 +9,7 @@
         Automated Deployment Nuxt App using Third Parties
       </h2>
       <div class="wrapper--button">
-        <nuxt-link to="/works" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 rounded-full">
+        <nuxt-link to="/works" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-16 rounded-full">
           Works
         </nuxt-link>
       </div>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+const Logo = () =>import('~/components/Logo.vue');
 
 export default {
   components: {
@@ -27,13 +27,9 @@ export default {
 }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
+<style lang="postcss" >
+
+.wrapper--main {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -43,12 +39,10 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ 
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
 }
 

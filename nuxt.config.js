@@ -68,7 +68,13 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa', 
+    'nuxt-webfontloader'
   ],
+  webfontloader: {
+    google: {
+      families: ['Tenor Sans:400&display=swap']
+    }
+  },
   /*
   ** Build configuration
   */
