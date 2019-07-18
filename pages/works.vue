@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="pt-20">
         <div class="wrapper--title py-10">
             <p class="text-5xl text-center">Works</p>
         </div>

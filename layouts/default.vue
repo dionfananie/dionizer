@@ -1,16 +1,17 @@
 <template>
-  <div class="container mx-auto relative">
-    <Navbar/>
-    <nuxt/>
-  </div>
+  <span>
+    <Navbar />
+    <div class="container mx-auto relative">
+      <nuxt />
+    </div>
+  </span>
 </template>
 
 <script>
-const Navbar = () => import('~/components/partials/Navbar');
+const Navbar = () => import("~/components/partials/Navbar");
 export default {
-  components:{
+  components: {
     Navbar
   }
-  
-}
+};
 </script>
