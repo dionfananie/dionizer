@@ -1,11 +1,11 @@
 <template>
   <div class="wrapper--logo">
-    <img src="~/static/logo/dionizer.png" height="300" alt="Logo Dionizer">
+    <img src="~/static/logo/dionizer.png" class="m-auto" alt="Logo Dionizer">
   </div>
 </template>
 <style>
   img{
-    height: 300px;
-    width: 300px;
+    height: 180px;
+    width: 180px;
   }
 </style>
