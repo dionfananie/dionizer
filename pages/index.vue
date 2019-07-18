@@ -8,8 +8,8 @@
       <h2 class="subtitle">
         Automated Deployment Nuxt App using Third Parties
       </h2>
-      <div class="wrapper--button">
-        <nuxt-link to="/works" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-16 rounded-full">
+      <div class="wrapper--button mt-10">
+        <nuxt-link to="/works" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-4 px-16 rounded-full">
           Works
         </nuxt-link>
       </div>
