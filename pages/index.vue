@@ -10,7 +10,7 @@
       </h2>
       <div class="wrapper--button">
         <nuxt-link to="/works" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 rounded-full">
-          Button
+          Works
         </nuxt-link>
       </div>
     </div>
