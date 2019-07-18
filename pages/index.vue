@@ -1,19 +1,19 @@
 <template>
-  <div class="wrapper--main">
-    <div>
-      <logo />
-      <h1 class="title">
-        Dionizer
-      </h1>
-      <h2 class="subtitle">
-        Automated Deployment Nuxt App using Third Parties
-      </h2>
-      <div class="wrapper--button mt-10">
-        <nuxt-link to="/works" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-4 px-16 rounded-full">
-          Works
-        </nuxt-link>
-      </div>
+  <div class="h-screen md:px-0 px-5 ">
+    <div class="wrapper--title flex h-screen items-center">
+      <span>
+        <p class="main--title text-gray-800">
+          Dion
+        </p>
+        <p class="main--title text-gray-500">
+          Fananie
+        </p>
+      </span>
     </div>
+      <div class="wrapper--subtext absolute bottom-0 py-4">
+        <p class="subtext">Personal Project.</p>
+      </div>
+
   </div>
 </template>
 
@@ -26,35 +26,16 @@ export default {
   }
 }
 </script>
-
-<style lang="postcss" >
-
-.wrapper--main {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
- 
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style lang="postcss" scoped>
+  .main--title{
+    font-size: responsive 5rem 12rem;
+    font-range: 425px 1920px;
+    line-height: responsive 6rem 12rem;
+    line-height-range: 425px 1920px;
+  }
+  .subtext{
+      font-family: 'Lato', sans-serif;
+      font-size: responsive 1.5rem 2.25rem
+  }
 </style>
+

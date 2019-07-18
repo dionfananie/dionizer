@@ -16,7 +16,8 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "nuxt-webfontloader": "^1.1.0"
+    "nuxt-webfontloader": "^1.1.0",
+    "postcss-responsive-type": "^1.0.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",

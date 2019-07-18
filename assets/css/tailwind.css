@@ -1,9 +1,10 @@
+@import "./atoms/button.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import "./atoms/button.css"; */
 
 
 body{
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e8f0;
 }
