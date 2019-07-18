@@ -5,21 +5,23 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: "Dionizer",
+    title: "Dion Fananie",
     meta: [
       { charset: "utf-8" },
       {
         name: "viewport",
         content: "width=device-width, initial-scale=1"
       },
-      { hid: "description", name: "description", content: "Automated Deployment Nuxt Apps using Third Parties" },
-      { hid: "keyword", name: "keyword", content: "Automated, Deployment, Nuxt, Apps using, Third Parties, CI, CD, Continuous" },
+      { hid: "description", name: "description", content: "Dion Fananie Personal Project" },
+      { hid: "keyword", name: "keyword", content: "Automated, Deployment, Nuxt, Apps using, Third Parties, CI, CD, Continuous, Personal, Project" },
       { hid: "robot", name: "robot", content: "Index, Follow" },
-      { hid: "og-description", property: "og:description", content: "Automated Deployment Nuxt Apps using Third Parties" },
+      { hid: "og-description", property: "og:description", content: "Dion Fananie Personal Project" },
       { hid: "og-title", property: "og:title", content: "Dionizer.com" },
       { hid: "og-type", property: "og:type", content: "website" },
       { hid: "og-url", property: "og:url", content: "https://www.dionizer-netlify.com" },
-      { hid: 'og-image-alt', property: 'og:image:alt', content: "Automated Deployment Nuxt Apps using Third Parties" },
+      { hid: 'og-image-alt', property: 'og:image:alt', content: "Dion Fananie Personal Project" },
+      { hid: 'og-image', property: 'og:image', content: "/img/og-image.png" },
+
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "dionizer.ico" },
