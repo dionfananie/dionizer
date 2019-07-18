@@ -1,7 +1,5 @@
 
 
-const {headConfig} = require('./config/head.js');
-// import {headConfig} from './config/head.js';
 
 module.exports = {
   mode: 'universal',
