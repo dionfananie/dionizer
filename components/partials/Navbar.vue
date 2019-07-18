@@ -10,7 +10,7 @@
       <span>
         <nuxt-link
           to="/works"
-          class="text-grey-500 text-xl hover:text-grey-800 font-bold"
+          class="text-gray-700 text-xl hover:text-gray-500 font-bold"
         >Portofolio</nuxt-link>
       </span>
     </div>
