@@ -5,7 +5,7 @@
 </template>
 <style>
   img{
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
   }
 </style>
