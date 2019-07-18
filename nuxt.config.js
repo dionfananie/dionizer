@@ -95,6 +95,7 @@ module.exports = {
     postcss: {
       plugins: {
         'postcss-nested': {},
+        'postcss-responsive-type': {},
         tailwindcss: './tailwind.config.js'
       }
     },

@@ -1,14 +1,14 @@
 <template>
-  <nav class="flex justify-between items-center py-5 absolute w-full">
-    <div class="mr-6">
+  <nav class="flex justify-between items-center p-5 absolute w-full">
+    <span>
       <nuxt-link to="/" class="text-grey-500 text-xl hover:text-grey-800">
         <img src="/logo/logo.svg" class="nav--logo" alt="">
       </nuxt-link>
-    </div>
+    </span>
     
-    <div class="mr-6">
+    <span>
       <nuxt-link to="/works" class="text-grey-500 text-xl hover:text-grey-800 font-bold">Portofolio</nuxt-link>
-    </div>
+    </span>
   </nav>
 </template>
 

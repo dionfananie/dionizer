@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen md:px-0 px-5 ">
     <div class="wrapper--title flex h-screen items-center">
       <span>
         <p class="main--title text-gray-800">
@@ -11,7 +11,7 @@
       </span>
     </div>
       <div class="wrapper--subtext absolute bottom-0 py-4">
-        <p class="text-4xl subtext">Personal Project.</p>
+        <p class="subtext">Personal Project.</p>
       </div>
 
   </div>
@@ -28,11 +28,14 @@ export default {
 </script>
 <style lang="postcss" scoped>
   .main--title{
-    font-size: 12rem;
-    line-height: 12rem;
+    font-size: responsive 5rem 12rem;
+    font-range: 425px 1920px;
+    line-height: responsive 6rem 12rem;
+    line-height-range: 425px 1920px;
   }
   .subtext{
       font-family: 'Lato', sans-serif;
+      font-size: responsive 1.5rem 2.25rem
   }
 </style>
 
