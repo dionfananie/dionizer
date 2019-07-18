@@ -1,19 +1,25 @@
 <template>
-  <div class="wrapper--main">
-    <div>
-      <logo />
-      <h1 class="title">
-        Dionizer
-      </h1>
-      <h2 class="subtitle">
-        Automated Deployment Nuxt App using Third Parties
-      </h2>
+  <div class="h-screen">
+    <div class="wrapper--title flex h-screen items-center">
+      <span>
+        <p class="main--title text-gray-800">
+          Dion
+        </p>
+        <p class="main--title text-gray-400">
+          Fananie
+        </p>
+      </span>
+    </div>
+      <div class="wrapper--subtext absolute bottom-0 py-4">
+        <p class="text-4xl subtext">Personal Project.</p>
+
+      </div>
+<!--      
       <div class="wrapper--button mt-10">
-        <nuxt-link to="/works" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-4 px-16 rounded-full">
+        <nuxt-link to="/works" class="btn--primary text-white font-bold py-4 px-16 rounded-full shadow-lg">
           Works
         </nuxt-link>
-      </div>
-    </div>
+      </div> -->
   </div>
 </template>
 
@@ -26,35 +32,14 @@ export default {
   }
 }
 </script>
-
-<style lang="postcss" >
-
-.wrapper--main {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
- 
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style lang="postcss" scoped>
+  .main--title{
+    font-size: 12rem;
+    line-height: 12rem;
+    /* text-shadow: 0.5rem 0.5rem 0.3rem #0000001f; */
+  }
+  .subtext{
+      font-family: 'Lato', sans-serif;
+  }
 </style>
+

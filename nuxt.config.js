@@ -83,7 +83,7 @@ module.exports = {
   ],
   webfontloader: {
     google: {
-      families: ['Tenor Sans:400&display=swap']
+      families: ['Lato:400,700&display=swap', 'Roboto:400,700&display=swap']
     }
   },
   /*
@@ -92,6 +92,7 @@ module.exports = {
   build: {
     postcss: {
       plugins: {
+        'postcss-nested': {},
         tailwindcss: './tailwind.config.js'
       }
     },
