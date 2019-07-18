@@ -1,5 +1,5 @@
 <template>
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg mb-24">
         <img class="w-full" src="~/static/img/city.jpg" alt="Sunset in the mountains">
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
