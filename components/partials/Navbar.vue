@@ -7,7 +7,7 @@
     </div>
     
     <div class="mr-6">
-      <nuxt-link to="/works" class="text-grey-500 text-xl hover:text-grey-800">Portofolio</nuxt-link>
+      <nuxt-link to="/works" class="text-grey-500 text-xl hover:text-grey-800 font-bold">Portofolio</nuxt-link>
     </div>
   </nav>
 </template>
