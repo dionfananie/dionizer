@@ -5,15 +5,26 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: "Dionizer",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      { hid: "description", name: "description", content: "Automated Deployment Nuxt Apps using Third Parties" },
+      { hid: "keyword", name: "keyword", content: "Automated, Deployment, Nuxt, Apps using, Third Parties, CI, CD, Continuous" },
+      { hid: "robot", name: "robot", content: "Index, Follow" },
+      { hid: "og-description", property: "og:description", content: "Automated Deployment Nuxt Apps using Third Parties" },
+      { hid: "og-title", property: "og:title", content: "Dionizer.com" },
+      { hid: "og-type", property: "og:type", content: "website" },
+      { hid: "og-url", property: "og:url", content: "https://www.dionizer-netlify.com" },
+      { hid: 'og-image-alt', property: 'og:image:alt', content: "Automated Deployment Nuxt Apps using Third Parties" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: "icon", type: "image/x-icon", href: "dionizer.ico" },
+    ],
+
   },
   /*
   ** Customize the progress-bar color
@@ -25,6 +36,28 @@ module.exports = {
   css: [
     '~/assets/css/tailwind.css'
   ],
+
+  icon: {
+    iconSrc: './static/logo/dionizer.png'
+  },
+
+
+  manifest: {
+    name: 'Rentfix.com',
+    short_name: 'Rentfix',
+    theme_color: '#ffffff',
+    background_color: '#ffffff',
+    orientation: 'portrait',
+  },
+  meta: {
+    mobileAppIOS: true,
+    name: 'Rentfix.com',
+    author: 'PT.REAL ESTATE TEKNOLOGI',
+    lang: 'en',
+    description: 'Sewa Menyewa Properti Online',
+
+
+  },
   /*
   ** Plugins to load before mounting the App
   */
@@ -34,6 +67,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/pwa', 
   ],
   /*
   ** Build configuration
