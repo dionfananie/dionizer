@@ -1,5 +1,5 @@
 
-
+const modeProd = process.env.NODE_ENV === 'production'? true:false;
 
 module.exports = {
   mode: 'universal',
@@ -33,7 +33,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'green' },
   /*
   ** Global CSS
   */
@@ -82,8 +82,16 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/pwa',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    'nuxt-purgecss'
   ],
+
+  purgeCss:{
+    enabled: modeProd,
+    paths:[
+      'components/**/*/vue'
+    ]
+  },
   webfontloader: {
     google: {
       families: ['Lato:400,700&display=swap', 'Roboto:400,700&display=swap']
@@ -93,6 +101,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCss:true,
+    optimizeCss: true,
     postcss: {
       plugins: {
         'postcss-nested': {},
