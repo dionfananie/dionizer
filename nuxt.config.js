@@ -64,7 +64,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/lottie.js', ssr: false }
+    { src: "~/plugins/typed.js", ssr: false }
   ],
   /*
   ** Nuxt.js modules
