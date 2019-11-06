@@ -1,41 +1,53 @@
 <template>
-  <div class="h-screen md:px-0 px-5 ">
-    <div class="wrapper--title flex h-screen items-center">
+  <div class="h-screen md:px-0 px-5">
+    <!-- <div class="wrapper--title flex h-screen items-center">
       <span>
-        <p class="main--title text-gray-800">
-          Dion
-        </p>
-        <p class="main--title text-gray-500">
-          Fananie
-        </p>
+        <p class="main--title text-gray-800">Dion</p>
+        <p class="main--title text-gray-500">Fananie</p>
       </span>
+    </div>-->
+    <div class="wrapper--lottie">
+      <Lottie :options="lottieAnimation" height="400px" width="500px" />
     </div>
-      <div class="wrapper--subtext absolute bottom-0 py-4">
-        <p class="subtext">Personal Project.</p>
-      </div>
-
+    <div class="wrapper--subtext absolute bottom-0 py-4">
+      <p class="subtext">Personal Project.</p>
+    </div>
   </div>
 </template>
 
 <script>
-const Logo = () =>import('~/components/Logo.vue');
-
+const Logo = () => import("~/components/Logo.vue");
+import animation from "~/static/lottie/haloween.json";
+import Lottie from "~/components/Lottie/index.vue";
 export default {
   components: {
-    Logo
-  }
-}
+    Logo,
+    Lottie
+  },
+  // data() {
+  //   return {
+  //     lottieAnimation: {
+  //       animationData: animation
+  //     }
+  //   };
+  // }
+  data: () => ({
+    lottieAnimation: {
+      animationData: animation
+    }
+  })
+};
 </script>
 <style lang="postcss" scoped>
-  .main--title{
-    font-size: responsive 5rem 12rem;
-    font-range: 425px 1920px;
-    line-height: responsive 6rem 12rem;
-    line-height-range: 425px 1920px;
-  }
-  .subtext{
-      font-family: 'Lato', sans-serif;
-      font-size: responsive 1.5rem 2.25rem
-  }
+.main--title {
+  font-size: responsive 5rem 12rem;
+  font-range: 425px 1920px;
+  line-height: responsive 6rem 12rem;
+  line-height-range: 425px 1920px;
+}
+.subtext {
+  font-family: "Lato", sans-serif;
+  font-size: responsive 1.5rem 2.25rem;
+}
 </style>
 
