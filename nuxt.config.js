@@ -27,6 +27,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'dionizer.ico' }
+    ],
+    script: [
+      { src: 'https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js' }
     ]
 
   },
@@ -64,7 +67,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: "~/plugins/typed.js", ssr: false }
+    { src: '~/plugins/typed.js', ssr: false },
+    { src: '~/plugins/firebase.js' }
   ],
   /*
   ** Nuxt.js modules

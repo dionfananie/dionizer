@@ -50,6 +50,7 @@ export default {
       animationData: discuss
     }
   })
+
 }
 </script>
 <style lang="postcss" scoped>
@@ -68,4 +69,5 @@ export default {
   font-family: "Lato", sans-serif;
   font-size: responsive 1.5rem 2.25rem;
 }
+
 </style>
