@@ -80,10 +80,7 @@ export default {
       }
     },
     login () {
-      console.log(this.email)
-      console.log(this.password)
-      const loginState = firebase.auth().signInWithEmailAndPassword(this.email, this.password)
-      console.log(loginState)
+      firebase.auth().signInWithEmailAndPassword(this.email, this.password)
     },
     loginOrRegister () {
       if (this.needsAccount) {

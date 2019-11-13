@@ -87,7 +87,8 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     'nuxt-webfontloader',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    '@nuxtjs/dotenv'
   ],
 
   purgeCss: {

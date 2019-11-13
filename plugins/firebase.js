@@ -1,14 +1,14 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDztHXhEqSZwsKSzx0KNXuhmF8-p3TwYRM',
+  apiKey: process.env.FIREBASE_KEY,
   authDomain: 'dionizer-5656e.firebaseapp.com',
   databaseURL: 'https://dionizer-5656e.firebaseio.com',
   projectId: 'dionizer-5656e',
   storageBucket: 'dionizer-5656e.appspot.com',
-  messagingSenderId: '64956808979',
-  appId: '1:64956808979:web:e688416d178d9d0fc164e6',
-  measurementId: 'G-K7WQM2Z0F3'
+  messagingSenderId: process.env.FIREBASE_SENDERID,
+  appId: process.env.FIREBASE_APPID,
+  measurementId: process.env.MEASUREMENTID
 }
 
 let app = null
