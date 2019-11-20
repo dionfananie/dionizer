@@ -1,6 +1,5 @@
 
 const modeProd = process.env.NODE_ENV === 'production'
-
 module.exports = {
   mode: 'universal',
   /*
@@ -88,8 +87,17 @@ module.exports = {
     '@nuxtjs/pwa',
     'nuxt-webfontloader',
     'nuxt-purgecss',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/apollo',
+    '@nuxtjs/proxy'
   ],
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:1337/graphql'
+      }
+    }
+  },
 
   purgeCss: {
     enabled: modeProd,
@@ -101,6 +109,9 @@ module.exports = {
     google: {
       families: ['Lato:400,700&display=swap', 'Roboto:400,700&display=swap']
     }
+  },
+  proxy: {
+    '/api': 'http://localhost:1337/'
   },
   /*
   ** Build configuration

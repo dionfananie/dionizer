@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen md:px-0 px-5">
+  <div class="h-screen md:px-0 px-5 ">
     <div class="wrapper--title sm:flex-col lg:flex-row justify-between flex h-screen items-center">
       <span>
         <vue-typed-js
