@@ -1,7 +1,6 @@
 # dionizer
-<<<<<<< HEAD
 
-> Automated Deployment Nuxt App using Third Parties
+> Automated Deployment Nuxt App using Netlify
 
 ## Build Setup
 
@@ -21,6 +20,4 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-=======
-Automated deployment with nuxt and third party
->>>>>>> d843201ea4208d0015b3167da0cef9e70aafb75c
+
