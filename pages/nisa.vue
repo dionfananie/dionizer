@@ -17,13 +17,13 @@
           6 Juni 2020
         </p>
       </div>
-      <div class="absolute bottom-0 sm:right-0 scroll py-0 sm:py-5 ">
+      <div class="absolute bottom-0 scroll py-0 sm:py-2">
         <img src="~/static/img/scroll.gif" />
       </div>
     </section>
-    <section class="h-screen flex justify-center py-10 px-5 relative">
+    <section class="h-screen flex justify-center sm:py-2 py-10 px-5 relative">
       <div>
-        <p class="text-4xl mail mt-6 mb-20">
+        <p class="text-4xl mail sm:mb-5 mt-6 mb-20">
           Welcome
           {{ date }}!
         </p>
@@ -48,7 +48,7 @@
           <img src="~/static/img/feather.png" width="80px" />
         </div>
       </div>
-      <div class="absolute bottom-0 sm:right-0 scroll py-0 sm:py-5">
+      <div class="absolute bottom-0 scroll py-0 sm:py-2">
         <img src="~/static/img/scroll.gif" />
       </div>
     </section>
@@ -135,6 +135,10 @@ export default {
   border-radius: 100%;
   border-radius: 100%;
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  @media screen and (orientation: landscape) {
+    width: 120px;
+    height: 120px;
+  }
 }
 .scroll {
   img {
