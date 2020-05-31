@@ -6,7 +6,10 @@
           Selembar halaman untuk...
         </h1>
         <div class="my-10 sm:my-4 image">
-          <img src="~/static/bday/nisa-pp.jpg" alt="nisa" />
+          <img
+            src="https://dionizer.s3-ap-southeast-1.amazonaws.com/nisa-pp.jpg"
+            alt="nisa"
+          />
         </div>
         <p class="text-2xl potrait">
           Nisa<br />
@@ -18,7 +21,9 @@
         </p>
       </div>
       <div class="absolute bottom-0 scroll py-0 sm:py-2">
-        <img src="~/static/img/scroll.gif" />
+        <img
+          src="https://dionizer.s3-ap-southeast-1.amazonaws.com/scroll.gif"
+        />
       </div>
     </section>
     <section class="h-screen flex justify-center sm:py-2 py-10 px-5 relative">
@@ -45,7 +50,10 @@
               From: D.E.F
             </p>
           </div>
-          <img src="~/static/img/feather.png" width="80px" />
+          <img
+            src="https://dionizer.s3-ap-southeast-1.amazonaws.com/feather.png"
+            width="80px"
+          />
         </div>
       </div>
       <div class="absolute bottom-0 scroll py-0 sm:py-2">
