@@ -107,13 +107,13 @@ module.exports = {
     "@nuxtjs/apollo",
     "@nuxtjs/proxy"
   ],
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.API
-      }
-    }
-  },
+  // apollo: {
+  //   clientConfigs: {
+  //     default: {
+  //       httpEndpoint: process.env.API
+  //     }
+  //   }
+  // },
 
   purgeCss: {
     enabled: modeProd,

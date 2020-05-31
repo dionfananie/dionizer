@@ -29,14 +29,15 @@
         </p>
         <p class="text-2xl mail">
           This page dedicated to
-          <span> Eristianisa Mulia Hasanah </span>
+          <span> Eristianisa Mulia Hasanah, </span>
           new days, new You!
         </p>
         <p class="text-2xl mail">
-          Lebih Dewasa, Lebih bijak dalam menghadapi dunia, Happy Quarterlife!
+          Be more mature, dream louder, create more, take the leap, inspired
+          more, challenged more, Happy Quarterlife!
         </p>
         <p class="text-l mail mt-5">
-          p.s. ssst... don't worry with quarterlife crysis. Just go ahead!
+          p.s. ssst... don't worry with quarterlife crysis. Just go beyond!
         </p>
         <div class="flex justify-between items-center mt-5">
           <div>
@@ -47,7 +48,7 @@
           <img src="~/static/img/feather.png" width="80px" />
         </div>
       </div>
-      <div class="absolute bottom-0 sm:right-0 scroll py-0 sm:py-5 w-full ">
+      <div class="absolute bottom-0 sm:right-0 scroll py-0 sm:py-5">
         <img src="~/static/img/scroll.gif" />
       </div>
     </section>
