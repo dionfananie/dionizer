@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import lottie from 'lottie-web'
+import lottie from "lottie-web";
 
 export default {
   props: {
@@ -13,35 +13,34 @@ export default {
     },
     height: {
       type: String,
-      default: 'auto'
+      default: "auto"
     },
     width: {
       type: String,
-      default: '100%'
+      default: "100%"
     }
   },
-  data () {
+  data() {
     return {
       style: {
-        overflow: 'hidden',
-        margin: '0 auto',
+        overflow: "hidden",
+        margin: "0 auto",
         width: this.width,
         height: this.height
       }
-    }
+    };
   },
-  mounted () {
+  mounted() {
     this.anim = lottie.loadAnimation({
       container: this.$refs.lottieContainer,
-      renderer: 'svg',
+      renderer: "svg",
       loop: this.options.loop !== false,
       autoplay: this.options.autoplay !== false,
       animationData: this.options.animationData
-    })
-    this.$emit('animCreated', this.anim)
+    });
+    this.$emit("animCreated", this.anim);
   }
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>
