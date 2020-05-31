@@ -1,0 +1,16 @@
+# Write your query or mutation here
+query Band {  
+  bands {
+    id
+    name
+    desc
+   musicians{
+    name
+  }
+    photos{
+      name
+      url
+    }
+    
+  }
+}

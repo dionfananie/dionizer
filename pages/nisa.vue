@@ -6,19 +6,19 @@
           Selembar halaman untuk...
         </h1>
         <div class="my-10 sm:my-4 image">
-          <img src="~/static/bday/nisa-pp.jpg" alt="nisa">
+          <img src="~/static/bday/nisa-pp.jpg" alt="nisa" />
         </div>
         <p class="text-2xl potrait">
-          Nisa<br>
+          Nisa<br />
           6 Juni 2020
         </p>
         <p class="text-2xl landscape">
-          Eristianisa Mulia Hasanah<br>
+          Eristianisa Mulia Hasanah<br />
           6 Juni 2020
         </p>
       </div>
       <div class="absolute bottom-0 sm:right-0 scroll py-0 sm:py-5 ">
-        <img src="~/static/img/scroll.gif">
+        <img src="~/static/img/scroll.gif" />
       </div>
     </section>
     <section class="h-screen flex justify-center py-10 px-5 relative">
@@ -44,11 +44,11 @@
               From: D.E.F
             </p>
           </div>
-          <img src="~/static/img/feather.png" width="80px">
+          <img src="~/static/img/feather.png" width="80px" />
         </div>
       </div>
       <div class="absolute bottom-0 sm:right-0 scroll py-0 sm:py-5 w-full ">
-        <img src="~/static/img/scroll.gif">
+        <img src="~/static/img/scroll.gif" />
       </div>
     </section>
     <section class="h-screen flex justify-center items-center px-5">
@@ -61,39 +61,41 @@
 
 <script>
 export default {
-  layout: 'bday',
+  layout: "bday",
   head: {
     link: [
       {
-        rel: 'stylesheet',
+        rel: "stylesheet",
         href:
-          'https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap'
+          "https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap"
       }
     ]
   },
   data: () => ({
-    date: '25th',
+    date: "25th",
     int: 0
   }),
   computed: {},
-  mounted () {
-    const nowday = new Date('06/6/2020')
-    const bornday = new Date('06/6/1995')
+  mounted() {
+    const nowday = new Date("06/6/2020");
+    const bornday = new Date("06/6/1995");
     const timeArr = [
-      (nowday.getTime() - bornday.getTime()) / (1000 * 3600 * 24) + 'days',
+      (nowday.getTime() - bornday.getTime()) / (1000 * 3600 * 24) + "days",
       nowday.getMonth() -
         bornday.getMonth() +
         12 * (nowday.getFullYear() - bornday.getFullYear()) +
-        'months',
-      nowday.getFullYear() - bornday.getFullYear() + 'th'
-    ]
+        "months",
+      nowday.getFullYear() - bornday.getFullYear() + "th"
+    ];
     setInterval(() => {
-      this.date = timeArr[this.int]
-      this.int += 1
-      if (this.int === timeArr.length) { this.int = 0 }
-    }, 1000)
+      this.date = timeArr[this.int];
+      this.int += 1;
+      if (this.int === timeArr.length) {
+        this.int = 0;
+      }
+    }, 1000);
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>

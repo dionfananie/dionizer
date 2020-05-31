@@ -6,8 +6,21 @@
     },
     "extends": [
       "@nuxtjs",
-      "plugin:vue/recommended"
+      "plugin:prettier/recommended",
+      "plugin:vue/recommended",
 
-    ]
+    ],
+    "rules":{
+      "vue/html-self-closing": ["off", {
+        "html": {
+          "void": "never",
+          "normal": "never",
+          "component": "never"
+        }
+      }]
+    }
+    
+   
+    
   
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen md:px-0 px-5">
+  <div class="h-screen md:px-0 px-5 ">
     <div class="wrapper--title sm:flex-col lg:flex-row justify-between flex h-screen items-center">
       <span>
         <vue-typed-js
@@ -20,7 +20,9 @@
       </div>
     </div>
     <div class="wrapper--lottie absolute bottom-0 w-full">
-      <Lottie :options="arrowAnimation" width="80px" />
+      <div @click="scrollPage">
+        <Lottie :options="arrowAnimation" width="80px" class="wrapper--arrow" />
+      </div>
     </div>
     <div class="h-screen flex justify-center items-center">
       <div class="wrapper--lottie w-full">
@@ -49,7 +51,14 @@ export default {
     discussAnimation: {
       animationData: discuss
     }
-  })
+  }),
+  methods: {
+    scrollPage: () => {
+      console.log('CLICKED')
+    }
+
+  }
+
 }
 </script>
 <style lang="postcss" scoped>
@@ -68,4 +77,8 @@ export default {
   font-family: "Lato", sans-serif;
   font-size: responsive 1.5rem 2.25rem;
 }
+.wrapper--arrow{
+  cursor: pointer;
+}
+
 </style>
