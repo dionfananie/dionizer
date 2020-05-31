@@ -59,15 +59,37 @@
       </div>
     </section>
     <section class="h-screen flex justify-center items-center px-5">
-      <p class="text-2xl ">
-        Here you go, open it!
-      </p>
+      <div>
+        <div v-show="!isShow">
+          <p class="text-2xl text-center">
+            Here you go, open it!
+          </p>
+          <Lottie :options="lottieAnimation" width="250px" />
+          <div class="flex justify-center">
+            <button
+              class="bg-red-500 hover:bg-red text-white font-bold py-2 w-full rounded-full "
+              @click="isShow = true"
+            >
+              Open Me!
+            </button>
+          </div>
+        </div>
+        <Tickets v-show="isShow" />
+      </div>
     </section>
   </div>
 </template>
 
 <script>
+import Lottie from "~/components/Lottie";
+import Tickets from "~/components/Tickets";
+import animation from "~/static/lottie/gift.json";
+
 export default {
+  components: {
+    Lottie,
+    Tickets
+  },
   layout: "bday",
   head: {
     link: [
@@ -80,7 +102,11 @@ export default {
   },
   data: () => ({
     date: "25th",
-    int: 0
+    int: 0,
+    lottieAnimation: {
+      animationData: animation
+    },
+    isShow: false
   }),
   computed: {},
   mounted() {
