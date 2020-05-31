@@ -21,9 +21,7 @@
         </p>
       </div>
       <div class="absolute bottom-0 scroll py-0 sm:py-2">
-        <img
-          src="https://dionizer.s3-ap-southeast-1.amazonaws.com/scroll.gif"
-        />
+        <img src="~/static/img/scroll.gif" />
       </div>
     </section>
     <section class="h-screen flex justify-center sm:py-2 py-10 px-5 relative">
@@ -57,7 +55,7 @@
         </div>
       </div>
       <div class="absolute bottom-0 scroll py-0 sm:py-2">
-        <img src="~/static/img/scroll.gif" />
+        <img src="~/static/img/scroll.gif" alt="gif" />
       </div>
     </section>
     <section class="h-screen flex justify-center items-center px-5">
