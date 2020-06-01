@@ -1,4 +1,5 @@
 <template>
+  <!-- this bands should being page, moved into components for performance -->
   <div class="md:px-0 px-5 py-5">
     <section class="flex flex-wrap mb-4">
       <div

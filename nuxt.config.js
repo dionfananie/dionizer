@@ -98,17 +98,17 @@ module.exports = {
     "@nuxtjs/pwa",
     "nuxt-webfontloader",
     "nuxt-purgecss",
-    "@nuxtjs/dotenv",
-    "@nuxtjs/apollo",
-    "@nuxtjs/proxy"
+    "@nuxtjs/dotenv"
+    // "@nuxtjs/apollo",
+    // "@nuxtjs/proxy"
   ],
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.API
-      }
-    }
-  },
+  // apollo: {
+  //   clientConfigs: {
+  //     default: {
+  //       httpEndpoint: process.env.API
+  //     }
+  //   }
+  // },
 
   purgeCss: {
     enabled: modeProd,
@@ -116,7 +116,7 @@ module.exports = {
   },
   webfontloader: {
     google: {
-      families: ["Lato:400,700&display=swap", "Roboto:400,700&display=swap"]
+      families: []
     }
   },
   proxy: {
@@ -129,11 +129,11 @@ module.exports = {
     extractCss: true,
     optimizeCss: true,
     postcss: {
-      plugins: {
-        "postcss-nested": {},
-        "postcss-responsive-type": {},
-        tailwindcss: "./tailwind.config.js"
-      }
+      // plugins: {
+      //   "postcss-nested": {},
+      //   "postcss-responsive-type": {},
+      //   tailwindcss: "./tailwind.config.js"
+      // }
     },
     /*
      ** You can extend webpack config here

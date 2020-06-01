@@ -40,6 +40,16 @@ import arrow from "~/static/lottie/arrow.json";
 import discuss from "~/static/lottie/discuss.json";
 import Lottie from "~/components/Lottie";
 export default {
+  head: {
+    title: "Dion Fananie",
+    link: [
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Lato:400,700&display=swap&Roboto:400,700&display=swap"
+      }
+    ]
+  },
   components: {
     Lottie
   },
