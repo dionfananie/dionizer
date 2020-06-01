@@ -79,10 +79,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: "~/plugins/typed.js", ssr: false },
-    { src: "~/plugins/firebase.js" }
-  ],
+  plugins: [{ src: "~/plugins/typed.js", ssr: false }],
   /*
    ** Nuxt.js modules
    */
