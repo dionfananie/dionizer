@@ -53,12 +53,7 @@ export default {
     discussAnimation: {
       animationData: discuss
     }
-  }),
-  methods: {
-    scrollPage: () => {
-      console.log("CLICKED");
-    }
-  }
+  })
 };
 </script>
 <style lang="postcss" scoped>
