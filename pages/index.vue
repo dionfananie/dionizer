@@ -43,6 +43,15 @@ export default {
   components: {
     Lottie
   },
+  head: {
+    link: [
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Lato:400,700&Roboto:400,700&display=swap"
+      }
+    ]
+  },
   data: () => ({
     lottieAnimation: {
       animationData: animation

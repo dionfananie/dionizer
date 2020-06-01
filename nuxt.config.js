@@ -44,10 +44,7 @@ module.exports = {
       },
       { hid: "og-image", property: "og:image", content: "/img/og-image.png" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "dionizer.ico" }],
-    script: [
-      { src: "https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js" }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "dionizer.ico" }]
   },
   /*
    ** Customize the progress-bar color
@@ -116,11 +113,7 @@ module.exports = {
     enabled: modeProd,
     paths: ["components/**/*/vue"]
   },
-  webfontloader: {
-    google: {
-      families: ["Lato:400,700&display=swap", "Roboto:400,700&display=swap"]
-    }
-  },
+  webfontloader: {},
   proxy: {
     "/api": process.env.API
   },
