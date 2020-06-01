@@ -53,7 +53,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["~/assets/css/tailwind.css"],
+  css: [],
 
   icon: {
     iconSrc: "./static/logo/dionizer.png"
@@ -102,6 +102,12 @@ module.exports = {
     // "@nuxtjs/apollo",
     // "@nuxtjs/proxy"
   ],
+  buildModules: ["@nuxtjs/tailwindcss"],
+  tailwindcss: {
+    configPath: "./tailwind.config.js",
+    cssPath: "~/assets/css/tailwind.css",
+    exposeConfig: false
+  },
   // apollo: {
   //   clientConfigs: {
   //     default: {
@@ -116,7 +122,10 @@ module.exports = {
   },
   webfontloader: {
     google: {
-      families: []
+      families: [
+        // "Lato:400,700&display=swap",
+        "Courgette&display=swap"
+      ]
     }
   },
   proxy: {
@@ -131,8 +140,7 @@ module.exports = {
     postcss: {
       plugins: {
         "postcss-nested": {},
-        "postcss-responsive-type": {},
-        tailwindcss: "./tailwind.config.js"
+        "postcss-responsive-type": {}
       }
     },
     /*

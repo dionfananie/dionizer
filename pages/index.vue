@@ -36,16 +36,16 @@
     <section :class="landscapeSize ? 'relative' : 'relative h-screen'">
       <div class="sm:py-2 py-10 px-5 container mx-auto">
         <img src="~/static/bday/divider.svg" width="50%" class="mx-auto" />
-        <p class="text-2xl sm:text-4xl mail sm:mb-5 mt-6 mb-2 sm:mt-8">
+        <p class="text-2xl sm:text-4xl sm:mb-5 mt-6 mb-2 sm:mt-8">
           Happy Bornday
           <TimeCounter />
         </p>
-        <p class="text-xl mail">
+        <p class="text-xl ">
           This page dedicated to
           <span> Eristianisa Mulia Hasanah. </span>
           New days, New You!
         </p>
-        <p v-if="landscapeSize" class="text-xl mail">
+        <p v-if="landscapeSize" class="text-xl ">
           <span class="landscape">
             Never hesitate from all uncertainty, at the end of the day, you've
             been through it better. Dealing what people said, let it go, you
@@ -57,7 +57,7 @@
             challenged more.
           </span>
         </p>
-        <p class="text-xl mail mt-5">
+        <p class="text-xl  mt-5">
           Happy Quarterlife!
         </p>
         <div v-if="landscapeSize">
@@ -72,7 +72,7 @@
             :type-speed="50"
             :show-cursor="false"
           >
-            <p class="text-l mail mt-5 gold typing" />
+            <p class="text-l  mt-5 gold typing" />
           </vue-typed-js>
         </div>
         <div
@@ -82,7 +82,7 @@
           "
         >
           <div class="flex justify-between items-center">
-            <p class="text-l mail ">
+            <p class="text-l  ">
               From: D.E.F
             </p>
             <img
@@ -142,14 +142,7 @@ export default {
   },
   layout: "bday",
   head: {
-    title: "Happy Birthday Nisa",
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Courgette&display=swap&family=Satisfy&display=swap"
-      }
-    ]
+    title: "Happy Birthday Nisa"
   },
   data: () => ({
     lottieAnimation: {
@@ -191,9 +184,6 @@ section {
   scroll-snap-align: center;
 }
 .home {
-  font-family: "Satisfy", cursive;
-}
-.mail {
   font-family: "Courgette", cursive;
 }
 .gold {
