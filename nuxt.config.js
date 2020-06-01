@@ -69,6 +69,7 @@ module.exports = {
     background_color: "#ffffff",
     orientation: "portrait"
   },
+
   meta: {
     mobileAppIOS: true,
     name: "Rentfix.com",
