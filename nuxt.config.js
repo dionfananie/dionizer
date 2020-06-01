@@ -44,10 +44,7 @@ module.exports = {
       },
       { hid: "og-image", property: "og:image", content: "/img/og-image.png" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "dionizer.ico" }],
-    script: [
-      { src: "https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js" }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "dionizer.ico" }]
   },
   /*
    ** Customize the progress-bar color
@@ -80,10 +77,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: "~/plugins/typed.js", ssr: false },
-    { src: "~/plugins/firebase.js" }
-  ],
+  plugins: [{ src: "~/plugins/typed.js", ssr: false }],
   /*
    ** Nuxt.js modules
    */
