@@ -26,6 +26,7 @@
     "nuxt-webfontloader": "^1.1.0",
     "postcss-responsive-type": "^1.0.0",
     "vue": "^2.6.6",
+    "vue-observe-visibility": "^0.4.6",
     "vue-server-renderer": "^2.6.6",
     "vue-template-compiler": "^2.6.6",
     "vue-typed-js": "^0.1.2"
