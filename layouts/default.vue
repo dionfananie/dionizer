@@ -8,10 +8,10 @@
 </template>
 
 <script>
-const Navbar = () => import('~/components/partials/Navbar')
+const Navbar = () => import("~/components/partials/Navbar");
 export default {
   components: {
     Navbar
   }
-}
+};
 </script>
