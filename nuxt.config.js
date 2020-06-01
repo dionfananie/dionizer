@@ -1,5 +1,4 @@
 require("dotenv").config();
-const modeProd = process.env.NODE_ENV === "production";
 module.exports = {
   mode: "universal",
   /*
@@ -116,10 +115,6 @@ module.exports = {
   //   }
   // },
 
-  purgeCss: {
-    enabled: modeProd,
-    paths: ["components/**/*/vue"]
-  },
   webfontloader: {
     google: {
       families: [
