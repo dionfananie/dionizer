@@ -1,6 +1,6 @@
 <template>
   <span>
-    <div class="container mx-auto relative content">
+    <div class="relative">
       <nuxt />
     </div>
   </span>
@@ -12,6 +12,7 @@ export default {};
 
 <style lang="postcss">
 body {
-  background-color: white;
+  background-color: #fcf0e8;
+  color: #2b3a41;
 }
 </style>
