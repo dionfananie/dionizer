@@ -129,11 +129,11 @@ module.exports = {
     extractCss: true,
     optimizeCss: true,
     postcss: {
-      // plugins: {
-      //   "postcss-nested": {},
-      //   "postcss-responsive-type": {},
-      //   tailwindcss: "./tailwind.config.js"
-      // }
+      plugins: {
+        "postcss-nested": {},
+        "postcss-responsive-type": {},
+        tailwindcss: "./tailwind.config.js"
+      }
     },
     /*
      ** You can extend webpack config here
