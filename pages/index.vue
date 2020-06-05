@@ -81,7 +81,7 @@
           </vue-typed-js>
         </div>
         <div
-          class=" mt-5"
+          class="mb-20 sm:mb-0 mt-5"
           :class="
             !landscapeSize ? 'absolute bottom-0 left-0 px-5 w-full' : 'relative'
           "
