@@ -42,7 +42,7 @@
       <div class="sm:py-2 py-10 px-5 container mx-auto">
         <img src="~/static/bday/divider.svg" width="50%" class="mx-auto" />
         <p class="text-2xl sm:text-4xl sm:mb-5 mt-6 mb-2 sm:mt-8">
-          Happy Bornday
+          Happy Birthday
           <TimeCounter />
         </p>
         <p class="text-xl ">

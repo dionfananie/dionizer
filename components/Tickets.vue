@@ -1,10 +1,12 @@
 <template>
   <div class="ticket">
     <div class="ticket__content">
-      <img
-        src="https://dionizer.s3-ap-southeast-1.amazonaws.com/raisha-concert.jpg"
-        alt="raisha concert"
-      />
+      <a href="http://raisa2020.id/">
+        <img
+          src="https://dionizer.s3-ap-southeast-1.amazonaws.com/raisha-concert.jpg"
+          alt="raisha concert"
+        />
+      </a>
     </div>
   </div>
 </template>
@@ -22,9 +24,6 @@ export default {};
   border-radius: 10px;
   background: #d8d8d8;
   box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.4);
-  &:hover {
-    transform: rotate(30deg);
-  }
 
   &:before,
   &:after {
