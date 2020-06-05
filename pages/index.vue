@@ -27,9 +27,14 @@
           </p>
         </div>
       </div>
-      <div class="absolute top-0 px-4 right-0 h-full">
+      <div class="absolute top-0 px-4 right-0 h-full hidden sm:block">
         <div class="flex items-center h-full">
           <Lottie :options="scrollAnimation" height="300px" />
+        </div>
+      </div>
+      <div class="absolute bottom-0 px-4 w-full block sm:hidden">
+        <div class="flex items-center w-full">
+          <Lottie :options="scrollMobileAnimation" width="60px" />
         </div>
       </div>
     </section>
@@ -92,9 +97,14 @@
           </div>
         </div>
       </div>
-      <div class="absolute top-0 px-4 right-0 h-full">
+      <div class="absolute top-0 px-4 right-0 h-full hidden sm:block">
         <div class="flex items-center h-full">
           <Lottie :options="scrollAnimation" height="300px" />
+        </div>
+      </div>
+      <div class="absolute bottom-0 px-4 w-full block sm:hidden">
+        <div class="flex items-center w-full">
+          <Lottie :options="scrollMobileAnimation" width="60px" />
         </div>
       </div>
     </section>
@@ -133,6 +143,7 @@ import Tickets from "~/components/Tickets";
 import TimeCounter from "~/components/TimeCounter";
 import animation from "~/static/lottie/gift.json";
 import scroll from "~/static/lottie/scroll3.json";
+import scrollMobile from "~/static/lottie/scroll1.json";
 
 export default {
   components: {
@@ -150,6 +161,9 @@ export default {
     },
     scrollAnimation: {
       animationData: scroll
+    },
+    scrollMobileAnimation: {
+      animationData: scrollMobile
     },
     orientation: "",
     isShow: false
