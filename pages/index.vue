@@ -27,7 +27,10 @@
           </p>
         </div>
       </div>
-      <div class="absolute top-0 px-4 right-0 h-full hidden sm:block">
+      <div
+        v-if="!landscapeSize"
+        class="absolute top-0 px-4 right-0 h-full hidden sm:block"
+      >
         <div class="flex items-center h-full">
           <Lottie :options="scrollAnimation" height="300px" />
         </div>
@@ -97,7 +100,10 @@
           </div>
         </div>
       </div>
-      <div class="absolute top-0 px-4 right-0 h-full hidden sm:block">
+      <div
+        v-if="!landscapeSize"
+        class="absolute top-0 px-4 right-0 h-full hidden sm:block"
+      >
         <div class="flex items-center h-full">
           <Lottie :options="scrollAnimation" height="300px" />
         </div>
