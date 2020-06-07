@@ -59,8 +59,8 @@ module.exports = {
   },
 
   manifest: {
-    name: "Rentfix.com",
-    short_name: "Rentfix",
+    name: "dionfananie.com",
+    short_name: "Dion Fananie",
     theme_color: "#ffffff",
     background_color: "#ffffff",
     orientation: "portrait"
